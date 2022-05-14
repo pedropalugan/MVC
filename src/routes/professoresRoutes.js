@@ -4,7 +4,7 @@ var router = express.Router();
 const ControllersProfessores = require('../controllers/professoresControlles')
 
 
-// define the home page route
+//Making the 'express' verbs using "ControllersProfessores" class's functions
 router
     .get('/', ControllersProfessores.pegarDados)
     .get('/:id', ControllersProfessores.pegarDadoId)
