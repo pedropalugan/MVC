@@ -4,7 +4,7 @@ const Sequelize = require('sequelize')
 const database = require('../config/dbConnect')
 const professores = require('../models/professoresModel')
 
-
+//Creating the functions to make queries on the DATABASE
 class ControllersProfessores{
     static async pegarDados(req, res){
         await database.sync()
