@@ -3,7 +3,7 @@ const Sequelize = require('sequelize')
 
 const database = require('../config/dbConnect')
 const professores = require('../models/professoresModel')
-
+//Importing database from dbConnect and professores to make the functions below
 //Creating the functions to make queries on the DATABASE
 class ControllersProfessores{
     static async pegarDados(req, res){
