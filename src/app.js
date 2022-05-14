@@ -13,5 +13,7 @@ app.use('/professores', professoresRotas)
 
 app.listen(porta, () => console.log("Rodando na porta "+porta))
 
-//dbConnect is imported on professoresModel which is imported in professoresControllers which
-//is imported in professoresRoutes that is imported in app.js
+//dbConnect (database) is imported on professoresModel (table)
+//which is imported in professoresControllers
+//(sequelize function) which
+//is imported in professoresRoutes (express verbs) that is imported in app.js
