@@ -1,7 +1,9 @@
 const Sequelize = require('sequelize')
 const database = require('../config/dbConnect')
 
+
 //Defining the table 'prof_info' from database dbConnect
+//and creating the table on database if not exists
 const professores = database.define('prof_info',{
     id: {
         type: Sequelize.INTEGER,
